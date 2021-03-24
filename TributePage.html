@@ -1,0 +1,128 @@
+<style>
+    #image {
+        /*User Story #8: The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.*/
+        width: 22%; /*width is only 22% of parent element*/
+        /*User Story #9: The img element should be centered within its parent element.*/
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;
+    }
+    #img-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #img-caption {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;
+    }
+    .year {
+        font-style:italic;
+        font-weight: 700;
+    }
+    .event {
+        font-weight: 600;
+    }
+    p {
+        margin-right: 150px;
+        margin-left: 50px;
+    }
+    h2 {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    body {
+        background: url(https://i.pinimg.com/originals/5b/6e/cd/5b6ecd6efaa07f8d9dced38874240636.jpg);
+    }
+    #Google_2015_logo {
+        transform: scale(0.5);
+        opacity: 70%;
+    }
+    #Google_2015_logo:hover {
+        transform: scale(0.7);
+    }
+</style>
+<!--User Story #1: an element with a corresponding id="main" that contains all other elements.-->
+<main id='main'>
+    <!--User Story #2: an element with a corresponding id="title", which contains a string (i.e. text) that describes the subject of the tribute page.-->
+    <title>
+        Larry Page
+    </title>
+    <!--User Story #3: a div element with a corresponding id="img-div".-->
+    <div id='img-div'>
+        <!--User Story #4: Within the img-div element, an img element with a corresponding id="image".-->
+        <img id='image' src='https://upload.wikimedia.org/wikipedia/commons/e/ec/Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg' alt='Larry_Page_in_the_European_Parliament'>
+        <!--User Story #5: Within the img-div element, an element with a corresponding id="img-caption" that contains textual content describing the image shown in img-div.-->
+        <figcaption id='img-caption'>Larry Page, co-founder of Google, in the European Parliament on 17.06.2009</figcaption>
+    </div>
+    <div id='tribute-list'>
+        <!--User Story #6: an element with a corresponding id="tribute-info", which contains textual content describing the subject of the tribute page.-->
+        <h2 id='tribute-info'>This tribute page lists the main steps taken by Larry at <img id='Google_2015_logo' src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png'> since its founding.</h3>
+        <ul id='year-list'>
+            <li class='year'>1998-2010</li>
+            <ul>
+                <li class='event'>Founding</li>
+                <p>Mark Malseed wrote in a 2003 feature story:
+
+                    Soliciting funds from faculty members, family and friends, Brin and Page scraped together enough to buy some servers and rent that famous garage in Menlo Park. ... [soon after], Sun Microsystems co-founder Andy Bechtolsheim wrote a $100,000 cheque to "Google, Inc." The only problem was, "Google, Inc." did not yet exist—the company hadn't yet been incorporated. For two weeks, as they handled the paperwork, the young men had nowhere to deposit the money.[46]
+                    In 1998,[47] Brin and Page incorporated Google, Inc.[48] with the initial domain name of "Googol", derived from a number that consists of one followed by one hundred zeros—representing the vast amount of data that the search engine was intended to explore. Following inception, Page appointed himself as CEO, while Brin, named Google's co-founder, served as Google's president.[11] Writer Nicholas Carlson wrote in 2014:
+                    
+                    The pair's mission was "to organize the world's information and make it universally accessible and useful."[49] With a US$1-million loan from friends and family, the inaugural team moved into a Mountain View office by the start of 2000. In 1999, Page experimented with smaller servers so Google could fit more into each square meter of the third-party warehouses the company rented for their servers. This eventually led to a search engine that ran much faster than Google's competitors at the time.[11]
+                    By June 2000, Google had indexed one billion Internet URLs (Uniform Resource Locators), making it the most comprehensive search engine on the Web at the time. The company cited NEC Research Institute data in its June 26 press release, stating that "there are more than 1 billion web pages online today", with Google "providing access to 560 million full-text indexed web pages and 500 million partially indexed URLs."[50]</p>
+                <li class='event'>Early management style</li>
+                <p>During his first tenure as CEO, Page embarked on an attempt to fire all of Google's project managers in 2001. Page's plan involved all of Google's engineers reporting to a VP of engineering, who would then report directly to him—Page explained that he didn't like non-engineers supervising engineers due to their limited technical knowledge.[11] Page even documented his management tenets for his team to use as a reference:
+
+                    Don't delegate: Do everything you can yourself to make things go faster.
+                    Don't get in the way if you're not adding value. Let the people doing the work talk to each other while you go do something else.
+                    Don't be a bureaucrat.
+                    Ideas are more important than age. Just because someone is junior doesn't mean they don't deserve respect and cooperation.
+                    The worst thing you can do is stop someone from doing something by saying, "No. Period." If you say no, you have to help them find a better way to get it done.[11]
+                    Even though Page's new model was unsustainable and led to disgruntlement among the affected employees, his issue with engineers being managed by non-engineering staff gained traction.[51] Page also believed that the faster Google's search engine returned answers, the more it would be used. He fretted over milliseconds and pushed his engineers—from those who developed algorithms to those who built data centers—to think about lag times. He also pushed for keeping Google's home page famously sparse in its design because it would help the search results load faster.[34]</p>
+            </ul>
+            <li class='year'>2001-2011</li>
+            <ul>
+                <li class='event'>Changes in management and expansion</li>
+                <p>Before Silicon Valley's two most prominent investors, Kleiner Perkins and Sequoia Capital, agreed to invest a combined total of $50 million in Google, they applied pressure on Page to step down as CEO so that a more experienced leader could build a "world-class management team." Page eventually became amenable to the idea after meeting with other technology CEOs, including Steve Jobs and Intel's Andrew Grove. Eric Schmidt, who had been hired as Chairman of Google in March 2001, left his full-time position as the CEO of Novell to take the same role at Google in August of the same year, and Page moved aside to assume the President of Products role.[11]
+
+                    Under Schmidt's leadership, Google underwent a period of major growth and expansion, which included its initial public offering (IPO) on August 20, 2004. He always acted in consultation with Page and Brin when he embarked on initiatives such as the hiring of an executive team and the creation of a sales force management system. Page remained the boss at Google in the eyes of the employees, as he gave final approval on all new hires, and it was Page who provided the signature for the IPO, the latter making him a billionaire at the age of 30.[11]
+                    
+                    Page led the acquisition of Android for $50 million in 2005 to fulfill his ambition to place handheld computers in the possession of consumers so that they could access Google anywhere. The purchase was made without Schmidt's knowledge, but the CEO was not perturbed by the relatively small acquisition. Page became passionate about Android and spent large amounts of time with Android CEO and cofounder Andy Rubin. By September 2008, T-Mobile launched the G1, the first phone using Android software and, by 2010, 17.2% of the handset market consisted of Android sales, overtaking Apple for the first time. Android became the world's most popular mobile operating system shortly afterward.[11]</p>
+                <li class='event'>Assumption of CEO position at Google</li>
+                <p>Following a January 2011 announcement,[52] Page officially became the chief executive of Google on April 4, 2011, while Schmidt stepped down to become executive chairman.[53] By this time, Google had over $180 billion market capitalization and more than 24,000 employees.[54] Reporter Max Nisen, described the decade prior to Page's second appointment as Google's CEO as Page's "lost decade" saying that while he exerted significant influence at Google via product development and other operations, he became increasingly disconnected and less responsive over time.[11][51]
+
+                    After Schmidt announced the end of his tenure as CEO on January 20, 2011, Page jokingly tweeted on Twitter: "Adult-supervision no longer needed."</p>
+            </ul>
+            <li class='year'>2011-2013</li>
+            <p>As Google's new CEO, Page's two key goals were the development of greater autonomy for the executives overseeing the most important divisions, and higher levels of collaboration, communication, and unity among the teams. Then Page also formed what the media called the "L-Team", a group of senior vice-presidents who reported directly to him and worked near his office for a portion of the working week.[55] Additionally, he reorganized the company's senior management, placing a CEO-like manager at the top of Google's most important product divisions, including YouTube, AdWords, and Google Search.[11]
+
+                Following a more cohesive team environment, Page declared a new "zero tolerance for fighting" policy that contrasted with his approach during the early days of Google, when he would use his harsh and intense arguments with Brin as an exemplar for senior management. Page had changed his thinking during his time away from the CEO role, as he eventually concluded that ambitious goals required a harmonious team dynamic. As part of Page's collaborative rejuvenation process, Google's products and applications were consolidated and underwent an aesthetic overhaul.[51][56]</p>
+            <ul>
+                <li class='event'>Changes and consolidation process</li>
+                <p>At least 70 of Google's products, features and services were eventually shut down by March 2013, while the appearance and nature of the remaining ones were unified.[57][58] Jon Wiley, lead designer of Google Search at the time, codenamed Page's redesign overhaul, which officially commenced on April 4, 2011, "Project Kennedy", based on Page's use of the term "moonshots" to describe ambitious projects in a January 2013 Wired interview.[56][59] An initiative named "Kanna" previously attempted to create a uniform design aesthetic for Google's range of products, but it was too difficult at that point in the company's history for one team to drive such change. Matias Duarte, senior director of the Android user experience when "Kennedy" started, explained in 2013 that "Google passionately cares about design." Page proceeded to consult with the Google Creative Lab design team, based in New York City, to find an answer to his question of what a "cohesive vision" of Google might look like.[56]
+
+                    The eventual results of "Kennedy" which were progressively rolled out from June 2011 until January 2013, were described by The Verge technology publication as focused upon "refinement, white space, cleanliness, elasticity, usefulness, and most of all simplicity." The final products were aligned with Page's aim for a consistent suite of products that can "move fast", and "Kennedy" was called a "design revolution" by Duarte. Page's "UXA" (user/graphics interface) design team then emerged from the "Kennedy" project, tasked with "designing and developing a true UI framework that transforms Google's application software into a beautiful, mature, accessible and consistent platform for its users." Unspoken of in public, the small UXA unit was designed to ensure that "Kennedy" became an "institution."[56]</p>
+                <li class='event'>Acquisition strategy and new products</li>
+                <p>When acquiring products and companies for Google, Page asked whether the business acquisition passed the toothbrush test as an initial qualifier, asking the question "Is it something you will use once or twice a day, and does it make your life better?". This approach looked for usefulness above profitability, and long-term potential over near-term financial gain, which has been noted as rare in business acquiring processes.[60][61][62]
+
+                    With Facebook's influence rapidly expanding during the start of Page's second tenure, he finally responded to the intensive competition with Google's own social network, Google+, in mid-2011. After several delays, the social network was released through a very limited field test and was led by Vic Gundotra, Google's then senior vice president of social.[63]
+                    
+                    In August 2011, Page announced that Google would spend $12.5 billion to acquire Motorola Mobility.[64] The purchase was primarily motivated by Google's need to secure patents to protect Android from lawsuits by companies including Apple Inc.[11] Page wrote on Google's official blog on August 15, 2011 that "companies including Microsoft and Apple are banding together in anti-competitive patent attacks on Android. The United States Department of Justice had to intervene in the results of one recent patent auction to 'protect competition and innovation in the open source software community' ... Our acquisition of Motorola will increase competition by strengthening Google's patent portfolio, which will enable us to better protect Android from anti-competitive threats from Microsoft, Apple and other companies".[65][66] In 2014, Page sold Motorola Mobility for $2.9 billion to Personal Computer maker, Lenovo which represented a loss in value of $9.5 billion over two years.[67]
+                    
+                    Page also ventured into hardware and Google unveiled the Chromebook in May 2012. The hardware product was a laptop that ran on a Google operating system, Chrome OS.[68]</p>
+            </ul>
+            <li class='year'>2013-2015</li>
+            <p>In January 2013, Page participated in a rare interview with Wired, in which writer Steven Levy discussed Page's "10X" mentality—Google employees are expected to create products and services that are at least 10 times better than those of its competitors—in the introductory blurb. Astro Teller, the head of Google X, explained to Levy that 10X is "just core to who he [Page] is", while Page's "focus is on where the next 10X will come from."[59] In his interview with Levy, Page referred to the success of YouTube and Android as examples of "crazy" ideas that investors were not initially interested in, saying: "If you're not doing some things that are crazy, then you're doing the wrong things."[59] Page also stated he was "very happy" with the status of Google+</p>
+            <li class='year'>2019</li>
+            <p>On December 3, 2019, Larry Page announced that he will step down from the position of Alphabet CEO and would be replaced by Google CEO Sundar Pichai. Pichai will also continue as Google CEO. Page and Google co-founder and Alphabet president Sergey Brin announced the change in a joint blog post, "With Alphabet now well-established, and Google and the Other Bets operating effectively as independent companies, it’s the natural time to simplify our management structure. We’ve never been ones to hold on to management roles when we think there’s a better way to run the company. And Alphabet and Google no longer need two CEOs and a President."[83]</p>
+        </ul>
+    </div>
+    <div id='references'>
+        <!--User Story #7: an a element with a corresponding id="tribute-link", which links to an outside site that contains additional information about the subject of the tribute page in a NEW TAB.-->
+        <p><hr>References: Text and image contents of this tribute page comes from <a id='tribute-link' href='https://en.wikipedia.org/wiki/Larry_Page#Google'><strong>Wikipedia - Larry Page</strong></a>. <br>&copy; Designs and coding copyrights are reserved by Xavier T.</p>
+    </div>
+</main>
