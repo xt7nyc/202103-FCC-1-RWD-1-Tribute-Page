@@ -25,6 +25,12 @@
     #copyright {
         font-size: 11px;
     }
+    #submit {
+        background-color: rgba(100, 53, 167, 0.5);
+        border-color: rgba(172, 165, 182, 0.5);
+        border-radius: 5px;
+        color: ivory;
+    }
 </style>
 
 
@@ -55,7 +61,7 @@
     <!--User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.-->
     <!--User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.-->
     <label id='number-label'>Store #</label>
-    <input tpye='number' id='number' size='40px' placeholder='Please enter the store number shown in the receipt.' min='' max=''>
+    <input tpye='number' id='number' size='40px' min='1' max='5' placeholder='Please enter the store number shown in the receipt.'>
 
     <!---->
     <!---->
@@ -81,9 +87,9 @@
     <!---->
     <!--User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.-->
     <p>Tell us more about your experience in our store. We highly value the voice of our customer - you!</p>
-    <textarea placeholder="Please enter your comments here."></textarea>
+    <textarea rows='5' cols='35' placeholder="Please enter your comments here."></textarea>
 
-
+    <br>
     <!---->
     <!---->
     <!--User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.-->
